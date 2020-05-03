@@ -12,7 +12,7 @@ before_install:
 
 
 script:
-  - docker run neerajnsharma/docker-react npm run test -- --coverage
+  - docker run -e CI=true neerajnsharma/docker-react npm run test -- --coverage
 
 
 deploy: 
